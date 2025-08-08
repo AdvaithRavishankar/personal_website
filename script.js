@@ -5,7 +5,7 @@ const ctx = canvas.getContext("2d");
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
-const letters = "Loading Advaith Ravishankar's Profile".split("");
+const letters = "Loading ".split("");
 const fontSize = 16;
 const columns = Math.floor(canvas.width / fontSize);
 const drops = new Array(columns).fill(0);
@@ -38,3 +38,35 @@ function endMatrix() {
 
 setTimeout(endMatrix, 8000);
 canvas.addEventListener("click", endMatrix);
+
+// Title Name Typewrite effect
+const typeTarget = document.getElementById("typewriter");
+const phrases = ["Advaith Ravishankar", "AI/ML Researcher"];
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function type() {
+  const currentPhrase = phrases[phraseIndex];
+  const delay = isDeleting ? 50 : 100;
+
+  typeTarget.textContent = currentPhrase.substring(0, charIndex) + (charIndex % 2 === 0 ? "|" : "");
+
+  if (!isDeleting && charIndex < currentPhrase.length) {
+    charIndex++;
+    setTimeout(type, delay);
+  } else if (isDeleting && charIndex > 0) {
+    charIndex--;
+    setTimeout(type, delay);
+  } else {
+    setTimeout(() => {
+      isDeleting = !isDeleting;
+      if (!isDeleting) {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+      }
+      type();
+    }, isDeleting ? 800 : 2500); // pause between transitions
+  }
+}
+
+setTimeout(type, 1000);
