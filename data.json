@@ -1,0 +1,22 @@
+[
+  {
+    "img": "assets/cards/harvard-ai-robotics.png",
+    "description": "Currently working with Dr Mengyu Wang at the <a href='https://wang.hms.harvard.edu/'> Harvard AI and Robotics Lab</a>. Buidling a real-time Vision Language model for AI-Smart devices and Robots"
+  },
+  {
+    "img": "assets/cards/salk.png",
+    "description": "Worked with Dr. Talmo Pereira at <a href='https://talmolab.org/'> the Salk Institute's Talmo Lab </a>. I worked on several projects during my 3.5 years: \n\t 1. Enabled computationally inexpensive 3D pose estimation and multi-view pose association by averaging 2D-to-3D lifted pose across camera views \n\t 2. Created an end-to-end multi-object identity tracking pipeline via a UNet trained with triplet contrastive learning and a KNN. \n\t 3. Developed two sample-efficient 2D pose estimation methods (1) DinoV2 features with a projection head onto confidence maps and (2) Segment Anything based masking for pretraining a UNet. \n\t 4. Attempted to create an open-vocabulary behaviour recognition pipeline by regressing the outputs of a Temporal Vision Transformer onto the embedding space of BERT via latent diffusion."
+  },
+  {
+    "img": "assets/cards/qualcomm.png",
+    "description": "Worked with Dr. Rajeev Jain on the Global Machine Learning R&D Team"
+  },
+  {
+    "img": "assets/cards/ds3.png",
+    "description": "As President of the <a href='https://www.ds3ucsd.com/'>Data Science Student Society</a>, lead over 500 active members to foster relationships in academia and industry. During my tenure, I accomplished the following: \n\t 1.  Improved data science on-campus recruiting by increasing affiliated industry partnerships by 400%. \n\t 2. Mentored 100+ students in deep learning projects using Q-learning, computer vision, and time-series prediction. \n\t 3. Managed DataHacks (a 300 person AI/ML hackathon) and raised over $15,000 in funding. "
+  },
+  {
+    "img": "assets/cards/probe.png",
+    "description": "Created a scalable recommendation system using deep learning for clients to find their next best investment."
+  }
+]

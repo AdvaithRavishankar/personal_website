@@ -15,7 +15,7 @@
   <!-- Main Content -->
   <div id="main-content" style="display: none;">
     <header class="glass">
-      <div class="brand" id="typewriter"></div>
+      <div class="brand" id="typewriter">Advaith Ravishankar</div>
       <nav>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -24,82 +24,87 @@
       </nav>
     </header>
 
-    <section id="about" style="margin-top: 120px;">
-    <div class="about-container">
+    <!-- About -->
+    <section id="about" class="section section--light" style="margin-top: 120px;">
+      <div class="about-container">
         <div class="about-left">
-        <img src="assets/dp.jpeg" alt="Profile" class="profile-pic" />
+          <img src="assets/dp.jpeg" alt="Profile" class="profile-pic" />
         </div>
         <div class="about-right">
-        <h2>About Me</h2>
-        <p>I am a multimodal AI researcher, currently working with <b>Vision-Language models in robots</b> at the <a href="https://wang.hms.harvard.edu/">Harvard AI and Robotics Lab</a> under Dr. Mengyu Wang (PhD).</p>
-        <p>I was previously mentored by <a href="https://talmopereira.com/">Dr. Talmo Pereira (PhD)</a> at <a href="https://talmolab.org/">the Salk Institute's Talmo Lab</a> where we developed sample-efficient and low-latency models for 2D and 3D markerless tracking using Computer Vision. I have also been mentored by <a href="https://www.ee.ucla.edu/rajeev-jain/">Dr. Rajeev Jain (PhD)</a> at Qualcomm, working on Generative AI solutions for VLSI.</p>
-        <p>I completed my undergaduate program at <b>UC San Diego</b> where I double majored in Mathematics+Computer Science and Cognitive Science. I am currently pursuing a master's degree at <b>Harvard University</b>.</p>
-        <p>If you are intereseted in reaching me, please add me on <a href="https://www.linkedin.com/in/advaith-ravishankar-232b601b8/">LinkedIn</a> and we can continue the discussion there!</p>
+          <h2 class="section-title">About Me</h2>
+          <p>I am a multimodal AI researcher, currently working with <b>Vision-Language models in robots</b> at the <a href="https://wang.hms.harvard.edu/">Harvard AI and Robotics Lab</a> under Dr. Mengyu Wang (PhD).</p>
+          <p>I was previously mentored by <a href="https://talmopereira.com/">Dr. Talmo Pereira (PhD)</a> at <a href="https://talmolab.org/">the Salk Institute's Talmo Lab</a> where we developed sample-efficient and low-latency models for 2D and 3D markerless tracking using Computer Vision. I have also been mentored by <a href="https://www.ee.ucla.edu/rajeev-jain/">Dr. Rajeev Jain (PhD)</a> at Qualcomm, working on Generative AI solutions for VLSI.</p>
+          <p>I completed my undergaduate program at <b>UC San Diego</b> where I double majored in Mathematics+Computer Science and Cognitive Science. I am currently pursuing a master's degree at <b>Harvard University</b>.</p>
+          <p>If you are intereseted in reaching me, please add me on <a href="https://www.linkedin.com/in/advaith-ravishankar-232b601b8/">LinkedIn</a> and we can continue the discussion there!</p>
         </div>
-    </div>
-    <div class="scroll-reel">
+      </div>
+
+      <div class="scroll-reel">
         <div class="reel-track">
-          <img src="assets/reel/DSC00443.JPG"/>
-          <img src="assets/reel/DSC00547.JPG"/>
-          <img src="assets/reel/IMG_6985.jpg"/>
-          <img src="assets/reel/IMG_3055.jpeg"/>
-          <img src="assets/reel/IMG_5723.JPG"/>
-          <img src="assets/reel/IMG_5724.jpg"/>       
+          <img src="assets/reel/DSC00443.JPG" alt="">
+          <img src="assets/reel/DSC00547.JPG" alt="">
+          <img src="assets/reel/IMG_6985.jpg" alt="">
+          <img src="assets/reel/IMG_3055.jpeg" alt="">
+          <img src="assets/reel/IMG_5723.JPG" alt="">
+          <img src="assets/reel/IMG_5724.jpg" alt="">
         </div>
-    </div>
-    <script>
+      </div>
+
+      <script>
         const reelTrack = document.querySelector('.reel-track');
         const images = Array.from(reelTrack.children);
         images.forEach(img => {
-        const clone = img.cloneNode(true);
-        reelTrack.appendChild(clone);
+          const clone = img.cloneNode(true);
+          reelTrack.appendChild(clone);
         });
-    </script>
+      </script>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
+    <!-- Experience -->
+    <section id="experience" class="section section--gray">
+      <h2 class="section-title section-title--accent-blue">Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-content">
+          <div class="timeline-content exp-card">
             <h3>ML Research Assistant @ Harvard AI and Robotics Lab</h3>
-            <h4>2025 - Present</h4>
+            <h4>Aug 2025 - Present</h4>
             <p>Buildling Vision Language Models for AI smart devices and robots</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-content">
+          <div class="timeline-content exp-card">
             <h3>ML Research Assistant @ Salk Institute's Talmo Lab</h3>
-            <h4>2022 - 2025</h4>
+            <h4>Apr 2022 - Jun 2025</h4>
             <p>Built markerless 2D and 3D pose tracking models using UNets and Vision Transformers.</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-content">
+          <div class="timeline-content exp-card">
             <h3>AI/ML Research Intern @ Qualcomm</h3>
-            <h4>2024 - 2024</h4>
-            <p>Worked on Generative AI models on the Global Machine Learning R&D Team </p>
+            <h4>Jun 2024 - Sep 2024</h4>
+            <p>Worked on Generative AI models on the Global Machine Learning R&D Team</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-content">
+          <div class="timeline-content exp-card">
             <h3>President @ Data Science Student Society at UC San Diego</h3>
-            <h4>2024 - 2025</h4>
+            <h4>May 2024 - Jun 2025</h4>
             <p>Led a 500+ person organization, fostering industry-academic synergy.</p>
           </div>
         </div>
-         <div class="timeline-item">
-          <div class="timeline-content">
+        <div class="timeline-item">
+          <div class="timeline-content exp-card">
             <h3>AI/ML Research Scientist @ Probe Information Services</h3>
-            <h4>2024 - 2024</h4>
+            <h4>Dec 2023 - Jun 2024</h4>
             <p>Developed a recomendation system for finanical similarity using GraphSAGE</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
+    <!-- Education -->
+    <section id="education" class="section section--light">
+      <h2 class="section-title section-title--accent-tomato">Education</h2>
       <div class="education-container">
         <div class="edu-entry">
           <img src="assets/logos/harvard-logo.png" alt="Harvard Logo">
@@ -110,24 +115,39 @@
         </div>
         <div class="edu-entry">
           <img src="assets/logos/ucsd-logo.png" alt="UCSD Logo">
-            <div>
-              <h3>UC San Diego</h3>
-              <p>BS. Mathemtaics + Computer Science & BS. Cognitive Science</p>
-            </div>
+          <div>
+            <h3>UC San Diego</h3>
+            <p>BS. Mathemtaics + Computer Science & BS. Cognitive Science</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-buttons">
-        <a href="mailto:advaith.ravishankar2002@gmail.com" class="button">Email</a>
-        <a href="https://www.linkedin.com/in/advaith-ravishankar-232b601b8/" class="button" target="_blank">LinkedIn</a>
-        <a href="https://github.com/AdvaithRavishankar" class="button" target="_blank">GitHub</a>
+    <!-- Contact -->
+    <section id="contact" class="section section--white">
+      <h2 class="section-title section-title--accent-blue">Contact Me</h2>
+      <div class="contact-icons">
+        <a class="icon-btn" href="mailto:advaith.ravishankar2002@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+            <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm0 0l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/advaith-ravishankar-232b601b8/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7 0h3.8v2.05h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.8 2.67 4.8 6.14V23h-4v-7.1c0-1.7-.03-3.9-2.38-3.9-2.39 0-2.76 1.86-2.76 3.78V23h-4V8z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://github.com/AdvaithRavishankar" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+            <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.57v-2.16c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.33-1.77-1.33-1.77-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.21-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.83 1.24 1.9 1.24 3.21 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .31.21.68.82.57A12 12 0 0 0 12 .5z" fill="currentColor"/>
+          </svg>
+        </a>
       </div>
     </section>
   </div>
 
+  <!-- Expander overlay (created dynamically by JS) -->
+  <div id="expander-overlay" class="expander-overlay" hidden></div>
   <script src="script.js"></script>
 </body>
 </html>
